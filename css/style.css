@@ -7,18 +7,16 @@ body {
     font-family: paybooc-Bold;
 }
 
-.welcome-header {
-    background-color: pink;
-    margin: 90px 0px;
-    text-align: center;
+.status-bar {
+    background-color: aqua;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.welcome-header__title {
-    font-size: 25px;
-    margin-bottom: 20px;
+/* 첫 번째 status-bar__column 클래스로써 span 태그면 */
+.status-bar__column:first-child span {
+    margin-right: 10px;
 }
 
 .welcome-header__text {
