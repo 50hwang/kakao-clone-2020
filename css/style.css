@@ -80,5 +80,3 @@ input:focus {
 #login-form input:focus {
     border-color: var(--bkg); /*변수 지정: --bkg를 특정 색으로*/
 }
-
-.
