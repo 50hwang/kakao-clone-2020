@@ -1,6 +1,10 @@
 @import "reset.css";
+
+/* Component */
 @import "status-bar.css";
 @import "nav-bar.css";
+@import "screen-header.css";
+
 @import "tachio-theme.css"; /* My own palette*/
 @font-face { font-family: 'paybooc-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
@@ -16,6 +20,12 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.welcome-header__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 160%;
 }
 
 .welcome-header__text {
