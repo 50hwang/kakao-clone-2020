@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "status-bar.css";
+@import "tachio-theme.css"; /* My own palette*/
 @font-face { font-family: 'paybooc-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body {
@@ -25,4 +26,48 @@ body {
     line-height: 160%;
     color: grey;
     width: 50%;
+    display: flex;
+.status-bar__column:first-child span {
+    margin-right: 10px;
+}
+
+/* n번째(여기서는 2) status-bar__column 클래스면 */
+.status-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end; /*오른쪽으로 정렬식 flex-end*/
+    align-items: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    transition: border-color 1s ease-in-out; /*상태 변화(여기서는 focus) 주었을 시, 1초간 */
+}
+
+/* input tag 내부의 placeholder 속성 고치고 싶을 때 */
+#login-form input::placeholder {
+    color: gray;
+}
+
+/* 보편적인 focus 상태에서의 outline을 없애고 */
+input:focus {
+    outline: none;
+}
+
+/* login-form 안에서의 focus 상태에서의 outline을 부여 */
+#login-form input:focus {
+    border-color: var(--bkg); /*변수 지정: --bkg를 특정 색으로*/
 }
