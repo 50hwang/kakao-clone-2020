@@ -1,0 +1,38 @@
+.nav-bar {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+    padding: 20px 50px;
+    border-top: 1px solid black;
+}
+
+.nav-bar__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar__items{
+    position: relative;
+}
+
+.nav-bar__items a{
+    position: relative;
+    color: black;
+}
+
+.notif {
+    position: absolute;
+    box-sizing: border-box;
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    left: 20px;
+    bottom: 20px;
+}
