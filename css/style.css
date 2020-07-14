@@ -7,16 +7,14 @@ body {
     font-family: paybooc-Bold;
 }
 
-.status-bar {
-    background-color: aqua;
-
+.welcome-header {
+    padding: 90px 10px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-}
-
-/* 첫 번째 status-bar__column 클래스로써 span 태그면 */
-.status-bar__column:first-child span {
-    margin-right: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .welcome-header__text {
@@ -26,42 +24,18 @@ body {
     width: 50%;
 }
 
-.status-bar {
-    background-color: aqua;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-/* 첫 번째 status-bar__column 클래스로써 span 태그면 */
-.status-bar__column:first-child span {
-    margin-right: 10px;
-}
-
-/* n번째(여기서는 2) status-bar__column 클래스면 */
-.status-bar__column:nth-child(2) {
-    display: flex;
-    justify-content: center;
-}
-
-.status-bar__column:last-child {
-    display: flex;
-    justify-content: flex-end; /*오른쪽으로 정렬식 flex-end*/
-    align-items: center;
-}
-
 #login-form {
     display: flex;
     flex-direction: column;
     margin: 0px 30px;
 }
 
-#login-form input {
+#login-form input:not([type="submit"]) {
     border: none;
     border-bottom: 1px solid black;
-    padding: 10px 0px;
+    padding: 10px 10px;
     margin-bottom: 20px;
-    transition: border-color 0.5s ease-in-out; /*상태 변화(여기서는 focus) 주었을 시, 1초간 */
+    transition: all 0.5s ease-in-out; /*상태 변화(여기서는 focus) 주었을 시, 1초간 */
 }
 
 /* input tag 내부의 placeholder 속성 고치고 싶을 때 */
@@ -76,5 +50,23 @@ input:focus {
 
 /* login-form 안에서의 focus 상태에서의 outline을 부여 */
 #login-form input:focus {
-    border-color: var(--bkg); /*변수 지정: --bkg를 특정 색으로*/
+    background-color: var(--shell); /*변수 지정: --bkg를 특정 색으로*/
+}
+
+#login-form input[type="submit"] {
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: var(--bkg);
+    cursor: pointer;
+}
+
+#login-form a {
+    text-align: end;
+    text-decoration: none;
+    font-size: 12px;
+    color: inherit;
+    cursor: not-allowed;
 }
