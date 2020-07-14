@@ -38,7 +38,7 @@ body {
     transition: all 0.5s ease-in-out; /*상태 변화(여기서는 focus) 주었을 시, 1초간 */
 }
 
-/* input tag 내부의 placeholder 속성 고치고 싶을 때 */
+/* input tag 내부의 placeholder 속성만 고치고 싶을 때 */
 #login-form input::placeholder {
     color: gray;
 }
@@ -53,6 +53,7 @@ input:focus {
     background-color: var(--shell); /*변수 지정: --bkg를 특정 색으로*/
 }
 
+/* type="submit"인 조건을 가진 input tag */
 #login-form input[type="submit"] {
     border: none;
     padding: 10px 0px;
