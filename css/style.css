@@ -26,7 +26,16 @@ body {
     line-height: 160%;
     color: grey;
     width: 50%;
+}
+
+.status-bar {
+    background-color: aqua;
+
     display: flex;
+    justify-content: space-between;
+}
+
+/* 첫 번째 status-bar__column 클래스로써 span 태그면 */
 .status-bar__column:first-child span {
     margin-right: 10px;
 }
@@ -54,7 +63,7 @@ body {
     border-bottom: 1px solid black;
     padding: 10px 0px;
     margin-bottom: 20px;
-    transition: border-color 1s ease-in-out; /*상태 변화(여기서는 focus) 주었을 시, 1초간 */
+    transition: border-color 0.5s ease-in-out; /*상태 변화(여기서는 focus) 주었을 시, 1초간 */
 }
 
 /* input tag 내부의 placeholder 속성 고치고 싶을 때 */
@@ -71,3 +80,5 @@ input:focus {
 #login-form input:focus {
     border-color: var(--bkg); /*변수 지정: --bkg를 특정 색으로*/
 }
+
+.
