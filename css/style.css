@@ -1,28 +1,29 @@
-@import "reset.css";
-@import "status-bar.css";
 @font-face { font-family: 'paybooc-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 body {
     font-family: paybooc-Bold;
 }
 
-.welcome-header {
-    background-color: pink;
-    margin: 90px 0px;
-    text-align: center;
+.status-bar {
+    background-color: aqua;
+
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 첫 번째 status-bar__column 클래스로써 span 태그면 */
+.status-bar__column:first-child span {
+    margin-right: 10px;
+}
+
+/* n번째(여기서는 2) status-bar__column 클래스면 */
+.status-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end; /*오른쪽으로 정렬식 flex-end*/
     align-items: center;
-}
-
-.welcome-header__title {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.welcome-header__text {
-    font-size: 15px;
-    line-height: 160%;
-    color: grey;
-    width: 50%;
 }
