@@ -1,0 +1,74 @@
+@import "reset.css";
+@import "status-bar.css";
+@import "nav-bar.css";
+@import "tachio-theme.css"; /* My own palette*/
+@font-face { font-family: 'paybooc-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+    font-family: paybooc-Bold;
+}
+
+.welcome-header {
+    padding: 90px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-header__text {
+    font-size: 15px;
+    line-height: 160%;
+    color: grey;
+    width: 50%;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+
+#login-form input:not([type="submit"]) {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out; /*상태 변화(여기서는 focus) 주었을 시, 1초간 */
+}
+
+/* input tag 내부의 placeholder 속성만 고치고 싶을 때 */
+#login-form input::placeholder {
+    color: gray;
+}
+
+/* 보편적인 focus 상태에서의 outline을 없애고 */
+input:focus {
+    outline: none;
+}
+
+/* login-form 안에서의 focus 상태에서의 outline을 부여 */
+#login-form input:focus {
+    background-color: var(--shell); /*변수 지정: --bkg를 특정 색으로*/
+}
+
+/* type="submit"인 조건을 가진 input tag */
+#login-form input[type="submit"] {
+    border: none;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: var(--bkg);
+    cursor: pointer;
+}
+
+#login-form a {
+    text-align: end;
+    text-decoration: none;
+    font-size: 12px;
+    color: inherit;
+    cursor: not-allowed;
+}

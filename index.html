@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ad2102df5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css\style.css">
+    <title>Welcome to TachioTalk</title>
+</head>
+<body>
+    <!-- 상태 표시줄 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__column__service">No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar_column">
+            <span class="status-bar__column__time">09:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span class="status-bar__column__time__battery">99%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <!-- 헤더 작성 -->
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Tachio Talk</h1>
+        <p class="welcome-header__text">If you have a Tachio Account, log in.<br>If not, it's OK.</p>
+    </header>
+
+    <!-- 로그인 폼 작성 -->
+    <form action="friends.html" method="get" id="login-form">
+        <input type="text" placeholder="E-mail or Phone number">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Log In"/>
+        <a href="#" class="">Forgot Tachio Account or Password??</a>
+    </form>
+</body>
+</html>
