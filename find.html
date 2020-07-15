@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ad2102df5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search | TachioTalk</title>
+</head>
+<body>
+    <!-- 상태 표시줄 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__column__service">No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar_column">
+            <span class="status-bar__column__time">09:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span class="status-bar__column__time__battery">99%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>    
+    <!-- 상단 제목 -->
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span class="screen-header__icons__contents"><i class="fas fa-search"></i></span>
+            <span class="screen-header__icons__contents"><i class="fas fa-cog"></i></span>
+        </div>
+    </header>
+    <!-- 메인 창 -->
+    <main>
+        <section class="main-menu">
+            <div class="main-menu__items">
+                <i class="fas fa-qrcode"></i>
+                <div class="desc">QR Code</div>
+            </div>
+            <div class="main-menu__items">
+                <i class="fas fa-address-book"></i>
+                <div class="desc">Add by<br>Contacts</div>
+            </div>
+            <div class="main-menu__items">
+                <i class="fas fa-id-badge"></i>
+                <div class="desc">Add by<br>ID</div>
+            </div>
+            <div class="main-menu__items">
+                <i class="fas fa-envelope"></i>
+                <div class="desc">Invite</div>
+            </div>
+        </section>
+        <section class="recommended-friends">
+            <div class="topic">추천 친구</div>
+            <div class="small">
+                <div class="avatar">
+                    <img src="/img/baeksoo.jpg" alt="">
+                </div>
+                <div class="profile">
+                    <div class="name">강백수</div>
+                    <span class="subtitle">식탁을 버렸네</span>
+                </div>
+                <div class="misc">
+                    <div class="main-menu__items">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="small">
+                <div class="avatar">
+                    <img src="/img/nine.jpg" alt="" class="">
+                </div>
+                <div class="profile">
+                    <div class="name">송재경(9)</div>
+                    <span class="subtitle">9와 숫자들 공연 D-9</span>
+                </div>
+                <div class="misc">
+                    <div class="main-menu__items">
+                        <i class="fas fa-user-plus"></i>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- 하단 navigation 바 -->
+    <nav class="nav-bar">
+        <ul class="nav-bar__list">
+            <li class="nav-bar__items">
+                <a href="friends.html"><i class="fas fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav-bar__items">
+                <a href="chatlist.html">
+                    <i class="fas fa-comments fa-2x"></i>
+                    <span class="notif">2</span>
+                </a>
+            </li>
+            <li class="nav-bar__items">
+                <a href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav-bar__items">
+                <a href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+</body>

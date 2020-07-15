@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8ad2102df5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Friends | TachioTalk</title>
+    <title>Chats | TachioTalk</title>
 </head>
 <body>
     <!-- 상태 표시줄 -->
@@ -25,80 +25,60 @@
     </div>
     <!-- 상단 제목 -->
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+        <h1 class="screen-header__title">Chats</h1>
         <div class="screen-header__icons">
             <span class="screen-header__icons__contents"><i class="fas fa-search"></i></span>
-            <span class="screen-header__icons__contents"><i class="fas fa-user-plus"></i></span>
+            <span class="screen-header__icons__contents"><i class="fas fa-comment-medical"></i></i></span>
             <span class="screen-header__icons__contents"><i class="fas fa-music"></i></span>
             <span class="screen-header__icons__contents"><i class="fas fa-users-cog"></i></span>
         </div>
     </header>
-    <!-- Main 화면 -->
+    <!-- 메인 창 -->
     <main>
-        <section id="myself">
-        <div class="large">
-            <div class="avatar">
-                <img src="https://avatars0.githubusercontent.com/u/59234986?s=60&u=d491190c2d7e26e4e4ebbd5a2fb3d6c6f605d6ed&v=4" alt="">
-            </div>
-            <div class="profile">
-                <div class="name">황수인</div>
-                <span class="subtitle">코드 짜는 중...</span>
-            </div>
-            <div class="misc">
-                <div class="now-listening">
-                    <span>강백수 - 하헌재 때문이다</span>
-                    <span><i class="far fa-play-circle"></i></span>
+        <section id="chat__list">
+            <div class="topic">나와의 채팅</div>
+            <div class="large">
+                <div class="avatar">
+                    <img src="https://avatars0.githubusercontent.com/u/59234986?s=60&u=d491190c2d7e26e4e4ebbd5a2fb3d6c6f605d6ed&v=4" alt="">
+                </div>
+                <div class="profile">
+                    <div class="name">황수인</div>
+                    <span class="subtitle">황수인 님이 메모를 보냈습니다.</span>
+                </div>
+                <div class="misc">
+                    <div class="message-time">
+                        <span>오후 9:43</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        </section> 
-        <section id="friends__list">
-            <div class="topic">Friends</div>
-            <div class="small">
+        </section>
+        <section id="chat__list">
+            <div class="topic">친구와의 채팅</div>
+            <a href="chatroom.html" class="small">
                 <div class="avatar">
                     <img src="/img/profile1.jpg" alt="">
+                    <span class="notif">2</span>
                 </div>
                 <div class="profile">
                     <div class="name">이유담</div>
-                    <span class="subtitle">노래 하는 중...</span>
+                    <span class="subtitle">이유담 님이 사진을 보냈습니다.<br>사진 잘 갔어요??</span>
                 </div>
-                <div class="misc"></div>
-            </div>
-            <div class="small">
+                <div class="misc">
+                    <span class="message-time">어제</span>
+                </div>
+            </a>
+            <a href="chatroom2.html" class="small">
                 <div class="avatar">
                     <img src="/img/profile3.jpg" alt="">
                 </div>
                 <div class="profile">
                     <div class="name">조명한</div>
-                    <span class="subtitle">メチャクチャ</span>
-                </div>
-                <div class="misc"></div>
-            </div>
-            <div class="small">
-                <div class="avatar">
-                    <img src="/img/profile4.jpg" alt="">
-                </div>
-                <div class="profile">
-                    <div class="name">최혜나</div>
-                    <span class="subtitle">모든 순간이 새로운 시간이 될 수 있다.</span>
-                </div>
-                <div class="misc"></div>
-            </div>
-            <div class="small">
-                <div class="avatar">
-                    <img src="/img/profile5.jpg" alt="">
-                </div>
-                <div class="profile">
-                    <div class="name">H:J</div>
-                    <span class="subtitle"></span>
+                    <span class="subtitle">별 일 없이 산다ㅋㅋㅋ</span>
                 </div>
                 <div class="misc">
-                    <div class="now-listening">
-                        <span>NEVERLAND - 유키스</span>
-                        <span><i class="far fa-play-circle"></i></span>
-                    </div>
+                    <span class="message-time">3일 전</span>
                 </div>
-            </div>
+            </a>
         </section>
     </main>
     <!-- 하단 navigation 바 -->

@@ -1,12 +1,19 @@
 /* Main Screen */
 main {
+    position: absolute;
     box-sizing: border-box;
-    width: 100%;
     padding: 25px 25px;
+    margin-top: 140px;
+    margin-bottom: 75px;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
 }
 
 section {
-    border-bottom: 2px solid gray;
+    padding: 10px 0px;
+    border-bottom: 2px solid var(--bkg);
 }
 
 /* Large one */
@@ -15,7 +22,8 @@ section {
     height: 120px;
     padding: 10px 10px;
     width: 100%;
-    background-color: grey;
+    border-radius: 10px;
+    background-color: var(--shell);
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -43,19 +51,34 @@ section {
     height: 100px;
     padding: 10px 10px;
     width: 100%;
-    background-color: grey;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1s linear;
 }
+
+.small:hover {
+    background-color: var(--nut);
+}
+
 
 .small .avatar {
     margin-right: 10px;
     box-sizing: border-box;
-    min-height: 80px;
-    min-width: 80px;
+    height: 80px;
+    width: 80px;
 }
+
+.avatar img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* object-fit: scale-down; */
+    border-radius: 40%;
+}
+
 
 /* Component */
 
@@ -64,7 +87,7 @@ section {
     min-width: 50%;
     min-height: 100%;
     padding: 10px    10px;
-    background-color: white;
+    background-color: transparent;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -72,6 +95,7 @@ section {
 
 .name {
     font-size: 25px;
+    color: black;
     width: 100%;
 }
 
@@ -87,15 +111,40 @@ section {
     width: 40%;
     min-height: 100%;
     padding: 10px 10px;
-    background-color: red;
+    padding-right: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
-.avatar img {
+.popup {
+    height: 80px;
+    margin: 10px 0px;
+    padding: 10px 10px;
     width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 40%;
+    background-color: lightgrey;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Misc : In Friends Screen */
+
+/* Listen   ing to Music */
+.now-listening {
+    padding: 8px;
+    border: 2px solid var(--bkg);
+    border-radius: 10px;
+}
+
+.now-listening span {
+    color: darkgray;
+    overflow-x: auto;
+    font-size: 14px;
+}
+
+.now-listening i {
+    color: var(--bkg);
 }
