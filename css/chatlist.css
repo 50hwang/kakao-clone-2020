@@ -4,8 +4,8 @@
 }
 
 #chat__list .small {
-    height: 120px;
-    padding: 10px 10px;
+    height: 84px;
+    padding: 0px 10px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -18,23 +18,24 @@
     position: relative;
     margin-right: 10px;
     box-sizing: border-box;
-    min-height: 100px;
-    min-width: 100px;
+    min-height: 80px;
+    min-width: 80px;
 }
 
 #chat__list .small .avatar .notif{
     position: absolute;
     box-sizing: border-box;
     background-color: var(--bkg);
-    width: 25px;
-    height: 25px;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    left: 75px;
-    bottom: 80px;
+    left: 65px;
+    bottom: 65px;
 }
 
 
@@ -45,4 +46,8 @@
 
 #chat__list a:visited {
     text-decoration: none;
+}
+
+#chat__list .misc span {
+    font-size: 12px;
 }

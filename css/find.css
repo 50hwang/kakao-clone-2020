@@ -6,12 +6,17 @@
 }
 
 .main-menu__items {
-    font-size: 60px;
+    font-size: 30px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: space-between;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s linear;
+}
+
+.main-menu__items:hover {
+    background-color: var(--nut);
 }
 
 .main-menu__items i {
@@ -31,5 +36,5 @@
 .recommended-friends i {
     border-radius: 10px;
     background-color: var(--bkg);
-    font-size: 30px;
+    font-size: 20px;
 }

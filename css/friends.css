@@ -1,14 +1,12 @@
 /* Main Screen */
 main {
-    position: absolute;
     box-sizing: border-box;
-    padding: 25px 25px;
-    margin-top: 140px;
+    padding: 0px 0px;
+    margin-top: 10px;
     margin-bottom: 75px;
     padding-bottom: 200px;
     width: 100%;
     height: 100%;
-    overflow: scroll;
 }
 
 section {
@@ -19,8 +17,8 @@ section {
 /* Large one */
 
 .large {
-    height: 120px;
-    padding: 10px 10px;
+    height: 84px;
+    padding: 0px 10px;
     width: 100%;
     border-radius: 10px;
     background-color: var(--shell);
@@ -31,10 +29,9 @@ section {
 }
 
 .large .avatar {
-    margin-right: 10px;
     box-sizing: border-box;
-    min-height: 100px;
-    min-width: 100px;
+    height: 80px;
+    width: 80px;
 }
 
 /* Small one */
@@ -48,8 +45,8 @@ section {
 }
 
 .small {
-    height: 100px;
-    padding: 10px 10px;
+    height: 80px;
+    padding: 10px 0px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -64,10 +61,9 @@ section {
 
 
 .small .avatar {
-    margin-right: 10px;
     box-sizing: border-box;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
 }
 
 .avatar img{
@@ -84,7 +80,7 @@ section {
 
 .profile {
     box-sizing: border-box;
-    min-width: 50%;
+    width: 40%;
     min-height: 100%;
     padding: 10px    10px;
     background-color: transparent;
@@ -94,13 +90,13 @@ section {
 }
 
 .name {
-    font-size: 25px;
+    font-size: 16px;
     color: black;
     width: 100%;
 }
 
 .subtitle {
-    font-size: 15px;
+    font-size: 12px;
     color: gray;
 }
 
@@ -110,8 +106,7 @@ section {
     right: 0px;
     width: 40%;
     min-height: 100%;
-    padding: 10px 10px;
-    padding-right: 20px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
