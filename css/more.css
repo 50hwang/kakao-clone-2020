@@ -1,3 +1,36 @@
-.misc .main-menu__items {
-    font-size: 50px ;
+.main-menu__items {
+    font-size: 30px ;
+    cursor: not-allowed;
+}
+
+#settings .small {
+    height: 50px;
+    font-size: 20px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: not-allowed;
+}
+
+
+#settings2 .small {
+    height: 50px;
+    font-size: 20px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: not-allowed;
+}
+
+.settings__items i{
+    font-size: 20px;
+    padding: 20px 10px;
+}
+
+.settings .small span {
+    font-size: inherit;
+}
+
+.settings__items + .misc {
+    color: darkgray;
 }
