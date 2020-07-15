@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8ad2102df5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>조명한 님과의 대화 | TachioTalk</title>
+</head>
+<body style="background-color: var(--bkg);">
+    <!-- 상태 표시줄 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__column__service">No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar_column">
+            <span class="status-bar__column__time">09:43</span>
+        </div>
+        <div class="status-bar_column">
+            <span class="status-bar__column__time__battery">99%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <!-- 상단 제목 -->
+    <header class="screen-header__v2">
+        <div class="screen-header__icons">
+            <span class="screen-header__icons__contents__v2">
+                <a href="chatlist.html">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+            </span>
+        </div>
+        <h1 class="screen-header__title__v2">조명한</h1>
+        <div class="screen-header__icons">
+            <span class="screen-header__icons__contents__v2"><i class="fas fa-search"></i></span>
+            <span class="screen-header__icons__contents__v2"><i class="fas fa-bars"></i></span>
+        </div>
+    </header>
+    <main>
+        <!-- 채팅 시간 -->
+        <div class="chat-time">
+            <div class="chat-time__in-box">2020년 7월 12일</div>
+        </div>
+        <!-- 받은 톡 -->
+        <div class="message-incoming">
+            <div class="small">
+                <div class="avatar">
+                    <img src="/img/profile3.jpg" alt="조명한">
+                </div>
+                <div class="profile">
+                    <div class="name">조명한</div>
+                    <span class="subtitle">
+                        어이, 잘 살고 있습니까??
+                    </span>
+                    <div class="timestamp">오후 4:39</div>
+                </div>
+            </div>
+        </div>
+        <!-- 보낸 톡 -->
+        <div class="message-sending">
+            <div class="small">
+                <div class="profile">
+                    <div class="timestamp">오후 9:30</div>
+                    <span class="subtitle">별 일 없이 산다ㅋㅋㅋ</span>
+                </div>
+                <div class="timestamp"></div>
+            </div>
+        </div>
+    </main>
+    <!-- 입력란 -->
+    <form class="reply">
+            <i class="far fa-plus-square"></i>
+            <input type="text" placeholder="Say something..." />
+            <i class="far fa-smile-wink"></i>
+            <i class="fas fa-paper-plane"></i>
+    </form>
+
+</body>

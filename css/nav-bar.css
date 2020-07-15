@@ -3,9 +3,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 75px;
     background-color: beige;
     padding: 20px 50px;
-    border-top: 1px solid black;
 }
 
 .nav-bar__list {
@@ -13,19 +13,56 @@
     justify-content: space-between;
 }
 
+@keyframes appearBtn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .nav-bar__items{
     position: relative;
+    animation: appearBtn 0.5s ease-in-out;
 }
+
+.nav-bar__items:nth-child(2) {
+    animation-delay: 0.075s;
+}
+
+.nav-bar__items:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.nav-bar__items:nth-child(4) {
+    animation-delay: 0.225s;
+}
+
 
 .nav-bar__items a{
     position: relative;
     color: black;
 }
 
+@keyframes notifAnim {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
 .notif {
     position: absolute;
     box-sizing: border-box;
-    background-color: tomato;
+    background-color: var(--bkg);
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -35,4 +72,5 @@
     color: white;
     left: 20px;
     bottom: 20px;
+    animation: notifAnim 2s ease-in-out infinite;
 }

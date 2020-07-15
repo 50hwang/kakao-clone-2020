@@ -1,8 +1,13 @@
 .screen-header {
+    box-sizing: border-box;
+    width: 100%;
+    top: 60px;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px;
+    height: 80px;
 }
 
 .screen-header__title {
@@ -12,4 +17,60 @@
 .screen-header__icons__contents {
     padding: 0px 10px;
     font-size: 22px;
+}
+
+.screen-header__v2 {
+    color: black;
+    box-sizing: border-box;
+    width: 100%;
+    top: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    height: 80px;
+}
+
+.screen-header__title__v2 {
+    color: black;
+    font-size: 28px;
+}
+
+
+.screen-header__title__v2 a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.screen-header__icons__contents__v2 {
+    color: black;
+    padding: 0px 10px;
+    font-size: 22px;
+}
+
+.reply {
+    font-size: 30px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: beige;
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    height: 30px;
+    font-size: 20px;
+    margin: 0px 20px;
+    padding: 0px 5px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
 }

@@ -1,0 +1,48 @@
+.message-time {
+    font-size: 15px;
+    color: gray;    
+}
+
+#chat__list .small {
+    height: 120px;
+    padding: 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#chat__list .small .avatar {
+    position: relative;
+    margin-right: 10px;
+    box-sizing: border-box;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+#chat__list .small .avatar .notif{
+    position: absolute;
+    box-sizing: border-box;
+    background-color: var(--bkg);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    left: 75px;
+    bottom: 80px;
+}
+
+
+
+#chat__list .subtitle {
+    line-height: 130%;
+}
+
+#chat__list a:visited {
+    text-decoration: none;
+}
